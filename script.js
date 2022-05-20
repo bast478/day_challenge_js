@@ -1,20 +1,22 @@
+const inpFirstName = document.querySelector("form input:first-child");
+const requirementsFirstN = document.querySelector("form p:nth-child(2)");
+
+const inpLastName = document.querySelector("form input:nth-child(3)");
+const requirementsLastN = document.querySelector("form p:nth-child(4)");
+
+const inpEmail = document.querySelector("form input:nth-child(5)");
+const requirementsEmail = document.querySelector("form p:nth-child(6)");
+
+const inpPassword = document.querySelector("form input:nth-child(7)");
+const requirementsPassword = document.querySelector("form p:nth-child(8)");
+
+const form = document.querySelector("form");
+
 function myFunction() {
-  const inpFirstName = document.querySelector("form input:first-child");
-  const requirementsFirstN = document.querySelector("form p:nth-child(2)");
-
-  const inpLastName = document.querySelector("form input:nth-child(3)");
-  const requirementsLastN = document.querySelector("form p:nth-child(4)");
-
-  const inpEmail = document.querySelector("form input:nth-child(5)");
-  const requirementsEmail = document.querySelector("form p:nth-child(6)");
-
-  const inpPassword = document.querySelector("form input:nth-child(7)");
-  const requirementsPassword = document.querySelector("form p:nth-child(8)");
 
   if (!inpFirstName.checkValidity()) {
     requirementsFirstN.setAttribute("class", "requirements_visible");
     inpFirstName.setAttribute("class", "input_error");
-    // inpFirstName.;
   } else {
     requirementsFirstN.setAttribute("class", "requirements");
     inpFirstName.removeAttribute("class");
@@ -44,3 +46,7 @@ function myFunction() {
     inpPassword.removeAttribute("class");
   }
 }
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
