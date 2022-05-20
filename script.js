@@ -12,6 +12,15 @@ const requirementsPassword = document.querySelector("form p:nth-child(8)");
 
 const form = document.querySelector("form");
 
+const svg = document.createElement("SVG");
+svg.setAttribute("width", "24");
+svg.setAttribute("height", "24");
+svg.setAttribute("xmlns", "http://www.w3.org/2000/svg")
+const contenu_svg = document.createTextNode('<g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g>');
+svg.appendChild(contenu_svg);
+document.body.appendChild(svg);
+
+
 function myFunction() {
 
   if (!inpFirstName.checkValidity()) {

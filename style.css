@@ -138,7 +138,7 @@ form p:nth-child(10) span {
 
 svg {
     position: absolute;
-    bottom: 470px;
+    bottom: 483px;
     right: 59px;
 }
 @media screen and (max-width: 375px){
