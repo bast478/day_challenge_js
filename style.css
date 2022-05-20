@@ -139,6 +139,7 @@ svg {
     position: relative;
     bottom: 62px;
     right: 10px;
+}
 
 @media screen and (max-width: 375px){
     #container{
