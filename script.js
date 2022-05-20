@@ -17,8 +17,6 @@ function myFunction() {
   if (!inpFirstName.checkValidity()) {
     requirementsFirstN.setAttribute("class", "requirements_visible");
     inpFirstName.setAttribute("class", "input_error");
-    // inpFirstName.setCustomValidity('efre');
-    // inpFirstName.;
   } else {
     requirementsFirstN.setAttribute("class", "requirements");
     inpFirstName.removeAttribute("class");
