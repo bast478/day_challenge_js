@@ -59,6 +59,7 @@ form {
     padding: 2.8125rem;
     box-sizing: border-box;
     text-align: right;
+    position: relative;
 }
 
 input {
@@ -136,9 +137,9 @@ form p:last-child span {
 }
 
 svg {
-    position: relative;
-    bottom: 62px;
-    right: 10px;
+    position: absolute;
+    bottom: 470px;
+    right: 59px;
 }
 
 @media screen and (max-width: 375px){
