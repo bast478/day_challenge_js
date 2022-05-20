@@ -105,6 +105,11 @@ form p {
     display: none;
 }
 
+.requirements_visible{
+    margin-top: 0.3125rem;
+    display: block;
+}
+
 input:not(:first-child) {
     margin-top: 1.25rem;
 }
@@ -119,4 +124,34 @@ form p:last-child {
 form p:last-child span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+@media screen and (max-width: 375px){
+    #container{
+        background:hsl(0, 100%, 74%) url("images/bg-intro-mobile.png");
+        width: 100%;
+        flex-direction: column;
+        padding: 3.125rem 30px;
+    }
+    .left ,.right {
+        width:100%;
+    }
+    .left{
+        margin-bottom: 2.5rem;
+    }
+    h1{
+        font-size: 1.5625rem;
+        text-align: center;
+    }
+    .left p{
+        text-align: center;
+        
+    }
+    .right>div{
+        padding: 1rem 3.125rem;
+    }
+    form{
+        padding: 1.25rem;
+    }
+  
 }
