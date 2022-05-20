@@ -141,7 +141,6 @@ svg {
     bottom: 470px;
     right: 59px;
 }
-
 @media screen and (max-width: 375px){
     #container{
         background:hsl(0, 100%, 74%) url("images/bg-intro-mobile.png");
