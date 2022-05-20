@@ -59,6 +59,7 @@ form {
     padding: 2.8125rem;
     box-sizing: border-box;
     text-align: right;
+    position: relative;
 }
 
 input {
@@ -123,22 +124,22 @@ input:not(:first-child) {
     margin-top: 1.25rem;
 }
 
-form p:last-child {
+form p:nth-child(10) {
     color: hsl(246, 25%, 77%);
     font-style: normal;
     text-align: center;
     margin-top: 0.8125rem;
 }
 
-form p:last-child span {
+form p:nth-child(10) span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
 }
 
 svg {
-    position: relative;
-    bottom: 62px;
-    right: 10px;
+    position: absolute;
+    bottom: 470px;
+    right: 59px;
 }
 @media screen and (max-width: 375px){
     #container{
