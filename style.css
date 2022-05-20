@@ -77,7 +77,16 @@ input:focus {
     border-color: black;
 }
 
-input[type="button"] {
+.input_error {
+    border-color: hsl(0, 100%, 74%);
+    border-width: 2px;
+}
+
+.input_error:focus {
+    border-color: hsl(0, 100%, 74%);
+}
+/* input[type="button"] */
+button{
     background-color: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
@@ -85,9 +94,13 @@ input[type="button"] {
     font-size: 0.9375rem;
     box-shadow: 0 3px #52ac85;
     border: none;
+    width: 100%;
+    height: 55px;
+    margin-top: 1.25rem;
+    border-radius: 5px;
 }
 
-input[type="button"]:hover {
+button:hover {
     background-color: #77e2b4;
     cursor: pointer;
 }
@@ -105,7 +118,7 @@ form p {
     display: none;
 }
 
-.requirements_visible{
+.requirements_visible {
     margin-top: 0.3125rem;
     display: block;
 }
@@ -126,6 +139,11 @@ form p:last-child span {
     font-weight: 700;
 }
 
+svg {
+    position: relative;
+    bottom: 62px;
+    right: 10px;
+}
 @media screen and (max-width: 375px){
     #container{
         background:hsl(0, 100%, 74%) url("images/bg-intro-mobile.png");
