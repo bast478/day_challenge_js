@@ -77,6 +77,15 @@ input:focus {
     border-color: black;
 }
 
+.input_error {
+    border-color: hsl(0, 100%, 74%);
+    border-width: 2px;
+}
+
+.input_error:focus {
+    border-color: hsl(0, 100%, 74%);
+}
+
 input[type="button"] {
     background-color: hsl(154, 59%, 51%);
     color: white;
@@ -105,7 +114,7 @@ form p {
     display: none;
 }
 
-.requirements_visible{
+.requirements_visible {
     margin-top: 0.3125rem;
     display: block;
 }
@@ -125,6 +134,11 @@ form p:last-child span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
 }
+
+svg {
+    position: relative;
+    bottom: 62px;
+    right: 10px;
 
 @media screen and (max-width: 375px){
     #container{
