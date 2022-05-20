@@ -124,14 +124,14 @@ input:not(:first-child) {
     margin-top: 1.25rem;
 }
 
-form p:last-child {
+form p:nth-child(10) {
     color: hsl(246, 25%, 77%);
     font-style: normal;
     text-align: center;
     margin-top: 0.8125rem;
 }
 
-form p:last-child span {
+form p:nth-child(10) span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
 }
